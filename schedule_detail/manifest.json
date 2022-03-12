@@ -1,0 +1,16 @@
+{
+    "name": "オンライン授業情報みえるくん",
+    "version": "1.0",
+    "manifest_version": 3, 
+    "description": "ITC-LMSでオンライン授業情報がわかります", 
+    "content_scripts": [
+        {
+            "matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/lms/timetable*"], 
+            "css": ["style.css"],
+            "js":["jquery-3.6.0.min.js",
+                "main.js"],
+            "permissions": ["storage"]
+            
+        }
+    ]
+}
