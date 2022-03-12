@@ -1,0 +1,6 @@
+.ui-dialog
+{
+    display: block;
+    background-color: red !important;
+    transition: 1s !important;
+}

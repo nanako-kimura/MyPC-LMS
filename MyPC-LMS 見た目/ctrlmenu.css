@@ -1,0 +1,21 @@
+.contorl_menu{
+    transition: 0.3s !important;
+    background-color: rgba(255,255,255,0.0) !important;
+    box-shadow: none !important;
+}
+
+.contorl_menu li a{
+    background-color: #EDF3F7 !important;
+    opacity: 1;
+    margin: 10px !important;
+    border-radius: 5px !important;
+    opacity: 1 !important;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5) !important;
+    border: none !important;
+    transition: 0.3s !important;
+}
+
+.contorl_menu li a:hover{
+    margin: 10px 0px !important;
+    transition: 0.3s !important;
+}

@@ -1,0 +1,13 @@
+.sidemenu_link{
+    margin: 10px !important;
+    transition: 0.2s;
+}
+
+.sidemenu_link:hover{
+    margin: 10px 0px !important;
+    transition: 0.2s;
+}
+
+.sidemenu_link a{
+    border-radius: 10px !important;
+}

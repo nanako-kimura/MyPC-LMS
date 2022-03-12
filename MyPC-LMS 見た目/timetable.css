@@ -1,0 +1,39 @@
+#page_contents{
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+#timetable .header h1{
+    font-weight: bold !important;
+    background:linear-gradient(transparent 70%, #96c1ea6b 0%) !important;
+    width: 50% !important;
+    max-width: 300px !important;
+}
+
+.icon{
+    background-color: transparent !important;
+}
+
+.header{
+    background-color: transparent !important;
+}
+
+.divTableCellRow{
+    border-radius: 10px !important;
+    margin: 10px !important;
+    transition: 0.3s;
+}
+
+.divTableCellRow:hover{
+    margin: 10px 0px !important;
+    transition: 0.3s;
+}
+
+.divTableCellHeader{
+    border-radius: 10px 10px 0 0 !important;
+    transition: 0.3s;
+}
+
+.divTableCellDetail{
+    border-radius: 0 0  10px 10px !important;
+}
