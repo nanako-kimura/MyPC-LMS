@@ -1,0 +1,40 @@
+{
+    "name": "Sample",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Sample Chrome Extension",
+    "content_scripts": [
+        {
+          "matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/*"],
+          "css": [
+              "slidemenu.css",
+              "ctrlmenu.css",
+              "popup.css"
+          ]
+        },
+        {
+            "matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/lms/timetable/*"],
+            "css":[
+                "timetable.css"
+            ],
+            "js": [
+                "jquery-3.6.0.min.js",
+                "timetable.js"
+            ]
+        },
+        {
+          "matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/lms/task/*"],
+          "css":[
+              "task.css"
+          ],
+          "js": [
+              "task.js"
+          ]
+        },{
+         "matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/lms/online/*"],
+          "css": [
+              "online.css"
+          ]
+        }
+    ]
+}
