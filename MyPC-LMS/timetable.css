@@ -1,0 +1,83 @@
+#page_contents{
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+#timetable .header h1{
+    font-weight: bold !important;
+    background:linear-gradient(transparent 70%, #96c1ea6b 0%) !important;
+    width: 50% !important;
+    max-width: 300px !important;
+}
+
+.icon{
+    background-color: transparent !important;
+}
+
+.header{
+    background-color: transparent !important;
+}
+
+.divTableCellRow{
+    border-radius: 10px !important;
+    margin: 10px !important;
+    transition: 0.3s;
+}
+
+.divTableCellRow:hover{
+    margin: 10px 0px !important;
+    transition: 0.3s;
+}
+
+.divTableCellHeader{
+    border-radius: 10px 10px 0 0 !important;
+    transition: 0.3s;
+}
+
+.divTableCellDetail{
+    border-radius: 0 0  10px 10px !important;
+}
+
+.result_list_line {
+    transition: 0.2s;
+    background-color: #96c1ea6b !important;
+    border-radius: 10px;
+    margin: 10px !important;
+}
+
+.online-mobile-hide{
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+    color: black;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+
+.check{
+    margin: 0px 40px;
+    display: flex;
+}
+
+
+.check h3{
+    padding: 20px 40px;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #96c1ea6b;
+    transition: 0.3s;
+}
+
+.check h3:hover{
+    padding: 20px 50px;
+    margin: 20px 10px;
+    transition: 0.3s;
+}

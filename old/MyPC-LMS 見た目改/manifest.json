@@ -34,7 +34,10 @@
          "matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/lms/online/*"],
           "css": [
               "online.css"
-          ]
+          ],
+          "js": [
+            "online.js"
+            ]
         }
     ]
 }

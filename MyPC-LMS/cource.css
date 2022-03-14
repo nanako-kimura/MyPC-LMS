@@ -1,0 +1,23 @@
+.page_outline {
+    margin: 0 auto;
+    width: 90% !important;
+    background-color: #EDF3F7 !important;
+}
+
+.page_name {
+    border-radius: 20px 20px 0 0 !important;
+}
+
+.page_supple:last-child{
+    border-radius: 0 0 20px 20px !important;
+}
+
+.page_subblock {
+    margin: 40px 70px 30px !important;
+
+    background-color: #EDF3F7 !important;
+}
+
+.subblock_title {
+    border-radius: 20px 0px 0px 20px !important;
+}

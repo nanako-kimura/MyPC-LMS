@@ -2,7 +2,6 @@ window.onload = function() {
     var texts = document.getElementsByClassName('deadline');
     var boxes = document.getElementsByClassName('result_list_line');
     var box = document.getElementsByClassName('result_list_content')[0];
-    document.getElementById('page_main').style.backgroundColor = "lightgreen";
 
     const getStorage = (key = null) => new Promise(resolve => {
         chrome.storage.local.get(key, resolve);

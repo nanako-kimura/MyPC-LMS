@@ -1,0 +1,47 @@
+#onlineCourseForm{
+    background-color: #EDF3F7 !important;
+}
+.course-header{
+    box-shadow: none !important;
+}
+.contents-title{
+    border: none !important;
+}
+.block-title,
+.block-title-txt
+{
+    color:black !important;
+}
+
+.result_list_tag{
+    border: none !important;
+	align-items: stretch !important;
+}
+.result_list_line{
+    transition: 0.2s;
+}
+.result_list_line:hover{
+    margin: 10px 0px !important;
+    transition: 0.2s;
+}
+
+.course-header,
+.block-title,
+.result_list_content,
+.contents-list,
+.block
+{
+    background-color: #EDF3F7 !important;
+}
+
+.block{
+    box-shadow: none !important;
+}
+.bold-txt{
+    background-color: #418fde80 !important;
+    margin: 5px !important;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;   
+	align-items: center;
+}

@@ -1,4 +1,14 @@
+// onlineページ用のcssを読み込む
+const head = document.querySelector("head")
+head.insertAdjacentHTML('beforeEnd', '<link href="/course/css/onlinelist.css" rel="stylesheet">');
 
+// 独自のスケジュールをあらかじめ読み込む
+chrome.runtime.sendMessage({
+}), response => {
+    console.log(response);
+};
+
+// onlineページを読み込む
 $(function(){
     'use strict';
   
@@ -10,7 +20,6 @@ $(function(){
         function(data){
                 var date = new Date () ;
                 var day = date.getDay() ;	
-                console.log(day)
                 if(day == 0)var add_data = $(data).find(".yobi_list_1");
                 if(day == 1)var add_data = $(data).find(".yobi_list_1");
                 if(day == 2)var add_data = $(data).find(".yobi_list_2");   
@@ -29,7 +38,10 @@ $(function(){
                     contents[i].style.whiteSpace = "pre-wrap"
                     contents[i].style.wordWrap = "break-word";
                 }
-                $("#timetable .header").before($(add_data));
+                let element = document.createElement('div');
+                element.classList.add('header')
+                element.innerHTML = "<span class=\"icon\"></span><h1>授業情報</h1>"
+                $("#timetable .header").before($(element),$(add_data));
             },
         function(){
             alert("オンライン授業情報が読み込めません");

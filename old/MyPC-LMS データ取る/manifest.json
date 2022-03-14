@@ -15,7 +15,17 @@
     },
     "content_scripts": [
       {
+        "matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/*"],
+        "css": [
+            "slidemenu.css",
+            "ctrlmenu.css"
+        ]
+      },
+      {
         "matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/lms/task/*"],
+        "css":[
+            "task.css"
+        ],
         "js": [
             "task.js"
         ]

@@ -29,6 +29,8 @@
 
 .result_list_line {
     transition: 0.2s;
+    background-color: #96c1ea6b !important;
+    border-radius: 10px;
 }
 
 
@@ -38,6 +40,10 @@
 .contents-list,
 .block {
     background-color: #EDF3F7 !important;
+}
+
+.block-title{
+    border: none !important;
 }
 
 .block {
