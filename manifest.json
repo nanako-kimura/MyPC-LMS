@@ -1,0 +1,59 @@
+{
+	"name": "MyPC-LMS",
+	"version": "1.0.0",
+	"manifest_version": 3,
+	"description": "課題欄など、ITC-LMSを使いやすいデザインに変更します。\nChange the design of the ITC-LMS to make it easier to use, such as the assignment columns.",
+	"host_permissions": ["https://script.google.com/*"],
+	"permissions": ["storage"],
+	"icons": {
+		"32": "favicon.png",
+		"48": "favicon.png",
+		"128": "favicon.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/*"],
+			"css": ["css/slidemenu.css", "css/ctrlmenu.css", "css/popup.css"]
+		},
+		{
+			"matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/lms/timetable*"],
+			"css": ["css/timetable.css"],
+			"js": ["js/jquery-3.6.0.min.js", "js/timetable.js"]
+		},
+		{
+			"matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/lms/task*"],
+			"css": ["css/task.css"],
+			"js": ["js/task.js"]
+		},
+		{
+			"matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/lms/online*"],
+			"css": ["css/online.css"],
+			"js": ["js/online.js"]
+		},
+		{
+			"matches": [
+				"https://itc-lms.ecc.u-tokyo.ac.jp/lms/course/information/list*"
+			],
+			"css": ["css/information.css"]
+		},
+		{
+			"matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/course/search*"],
+			"css": ["css/search.css"]
+		},
+		{
+			"matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/lms/course*"],
+			"css": ["css/cource.css"]
+		},
+		{
+			"matches": ["https://itc-lms.ecc.u-tokyo.ac.jp/updateinfo*"],
+			"css": ["css/updateinfo.css"]
+		}
+	],
+	"options_ui": {
+		"page": "options/options.html"
+	},
+	"background": {
+		"service_worker": "js/background.js",
+		"presistent": false
+	}
+}

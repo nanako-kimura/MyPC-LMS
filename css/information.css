@@ -1,0 +1,49 @@
+#radio_send_type {
+	background-color: #edf3f7 !important;
+}
+
+.subblock {
+	box-shadow: none !important;
+}
+
+.subblock_title {
+	background-color: transparent !important;
+}
+
+.subblock_title_txt {
+	font-weight: bold;
+	background: linear-gradient(transparent 70%, #96c1ea6b 0%) !important;
+	max-width: 400px;
+	padding: 15px 0 10px !important;
+}
+
+.result_list_tag {
+	display: flex;
+	border: none !important;
+}
+
+.result_list_head {
+	background-color: #418fde80 !important;
+	margin: 5px !important;
+	padding: 10px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.result_list {
+	border: none !important;
+	background-color: #edf3f7 !important;
+	box-shadow: none !important;
+}
+
+.result_list_line {
+	transition: 0.2s;
+	background-color: #96c1ea6b !important;
+	border-radius: 10px;
+	margin: 10px !important;
+}
+.result_list_line:hover {
+	margin: 10px 0px !important;
+	transition: 0.2s;
+}
